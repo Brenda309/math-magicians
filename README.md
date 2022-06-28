@@ -1,56 +1,50 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magicians
 
-> Description the project.
+> Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
+ - Make simple calculations.
+ - Read a random math-related quote.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html
+- css
+- JavaScript
+- React
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
+## Clone this repository
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+      $ git clone git@github.com:Brenda309/math-magicians.git
+      $ cd math-magicians
 
+## Run project
+      $ npm install
+      $ npm run start# this will make webpack watching for your changes in code
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
 
 ### Setup
-
+- Text editor
+- Terminal
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+    $ npx create-react-app ./
+    $ cd math-magicians
+### Open page in browser
+    $ open dist/index.html
 
 ## Authors
 
-👤 **Author1**
+👤 **Brenda Wihogora**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Brenda309)
+- Twitter: [@twitterhandle](https://twitter.com/BrendaWihogora)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/BrendaWihogora/)
 
 ## 🤝 Contributing
 
