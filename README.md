@@ -33,10 +33,10 @@
 - Text editor
 - Terminal
 ### Install
-     npx create-react-app ./
-     cd math-magicians
+    $ npx create-react-app ./
+    $ cd math-magicians
 ### Open page in browser
-     $ open dist/index.html
+    $ open dist/index.html
 
 ## Authors
 
