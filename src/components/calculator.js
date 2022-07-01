@@ -24,7 +24,11 @@ class Calculator extends React.Component {
       <section className="calc">
         <div>
           <h1>Calculator</h1>
-          <p className="display-box">{next || operation || total || 0}</p>
+          <p className="display-box">
+            <span>{total}</span>
+            <span>{operation}</span>
+            <span>{next}</span>
+          </p>
           <table className="calculator">
             <tbody>
               <tr>
