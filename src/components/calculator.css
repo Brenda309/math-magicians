@@ -1,8 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .calc {
   display: flex;
   justify-content: space-around;
@@ -12,9 +13,11 @@ table tr {
   margin: 0;
   height: 50px;
 }
+
 table td {
   width: 25%;
 }
+
 h1 {
   font-size: 40px;
   margin-left: 20px;
