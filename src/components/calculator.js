@@ -24,11 +24,7 @@ class Calculator extends React.Component {
       <section className="calc">
         <div>
           <h1>Calculator</h1>
-          <p className="display-box">
-            <span>{total}</span>
-            <span>{operation}</span>
-            <span>{next}</span>
-          </p>
+          <p className="display-box">{next || operation || total || 0}</p>
           <table className="calculator">
             <tbody>
               <tr>
@@ -57,7 +53,7 @@ class Calculator extends React.Component {
                   <input
                     type="button"
                     className="orange"
-                    value="/"
+                    value="÷"
                     onClick={(e) => this.handleEvent(e.target.value)}
                   />
                 </td>
@@ -88,7 +84,7 @@ class Calculator extends React.Component {
                   <input
                     type="button"
                     className="orange"
-                    value="X"
+                    value="x"
                     onClick={(e) => this.handleEvent(e.target.value)}
                   />
                 </td>
