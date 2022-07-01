@@ -3,8 +3,7 @@
   justify-content: space-around;
 }
 
-table td {
-  padding: 0;
+table tr {
   margin: 0;
 }
 
@@ -25,10 +24,13 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   background-color: hsla(270, 1%, 29%, 0.557);
   border: solid black 0.5px;
-  color: white;
-  width: 127%;
-  height: 65%;
+  color: rgb(31, 24, 24);
+  width: 93%;
+  height: 10%;
   text-align: end;
+  margin: auto;
+  padding: 0;
+
 }
 
 input {
