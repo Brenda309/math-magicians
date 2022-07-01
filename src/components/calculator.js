@@ -1,96 +1,181 @@
 import React from 'react';
 import './calculator.css';
+import calculate from '../logics/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+
+    this.handleEvent = this.handleEvent.bind(this);
   }
 
+  handleEvent = (buttonName) => {
+    this.setState((prevState) => calculate(prevState, buttonName));
+  };
+
   render() {
+    const { total, operation, next } = this.state;
     return (
       <section className="calc">
         <div>
           <h1>Calculator</h1>
+          <p className="display-box">{next || operation || total || 0}</p>
           <table className="calculator">
-            <tr>
-              <td colSpan="3">
-                <input
-                  className="display-box"
-                  value="0"
-                  type="text"
-                  id="result"
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="button" value="AC" />
-              </td>
-              <td>
-                <input type="button" value="+/-" />
-              </td>
-              <td>
-                <input type="button" value="%" />
-              </td>
-              <td>
-                <input type="button" className="orange" value="/" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="button" value="7" />
-              </td>
-              <td>
-                <input type="button" value="8" />
-              </td>
-              <td>
-                <input type="button" value="9" />
-              </td>
-              <td>
-                <input type="button" className="orange" value="X" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="button" value="4" />
-              </td>
-              <td>
-                <input type="button" value="5" />
-              </td>
-              <td>
-                <input type="button" value="6" />
-              </td>
-              <td>
-                <input type="button" className="orange" value="-" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="button" value="1" />
-              </td>
-              <td>
-                <input type="button" value="2" />
-              </td>
-              <td>
-                <input type="button" value="3" />
-              </td>
-              <td>
-                <input type="button" className="orange" value="+" />
-              </td>
-            </tr>
-            <tr>
-              <td colSpan="2">
-                <input type="button" value="0" />
-              </td>
-              <td>
-                <input type="button" value="." />
-              </td>
-              <td>
-                <input type="button" className="orange" value="/" />
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="AC"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="+/-"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="%"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    className="orange"
+                    value="÷"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="7"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="8"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="9"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    className="orange"
+                    value="x"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="4"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="5"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="6"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    className="orange"
+                    value="-"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="1"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="2"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="3"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    className="orange"
+                    value="+"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colSpan="2">
+                  <input
+                    type="button"
+                    value="0"
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="."
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    className="orange"
+                    value="="
+                    onClick={(e) => this.handleEvent(e.target.value)}
+                  />
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>
