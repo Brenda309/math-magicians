@@ -14,8 +14,10 @@ const Calculator = () => {
   };
   return (
     <section className="calc">
+      <div className="calc-header">
+        <h1>Let us do some Math!</h1>
+      </div>
       <div>
-        <h1>Calculator</h1>
         <p className="display-box">
           <span>{state.total}</span>
           <span>{state.operation}</span>
@@ -25,25 +27,13 @@ const Calculator = () => {
           <tbody>
             <tr>
               <td>
-                <input
-                  type="button"
-                  value="AC"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="AC" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="+/-"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="+/-" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="%"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="%" onClick={handleEvent} />
               </td>
               <td>
                 <input
@@ -56,25 +46,13 @@ const Calculator = () => {
             </tr>
             <tr>
               <td>
-                <input
-                  type="button"
-                  value="7"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="7" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="8"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="8" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="9"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="9" onClick={handleEvent} />
               </td>
               <td>
                 <input
@@ -87,25 +65,13 @@ const Calculator = () => {
             </tr>
             <tr>
               <td>
-                <input
-                  type="button"
-                  value="4"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="4" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="5"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="5" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="6"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="6" onClick={handleEvent} />
               </td>
               <td>
                 <input
@@ -118,25 +84,13 @@ const Calculator = () => {
             </tr>
             <tr>
               <td>
-                <input
-                  type="button"
-                  value="1"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="1" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="2"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="2" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="3"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="3" onClick={handleEvent} />
               </td>
               <td>
                 <input
@@ -149,18 +103,10 @@ const Calculator = () => {
             </tr>
             <tr>
               <td colSpan="2">
-                <input
-                  type="button"
-                  value="0"
-                  onClick={handleEvent}
-                />
+                <input type="button" value="0" onClick={handleEvent} />
               </td>
               <td>
-                <input
-                  type="button"
-                  value="."
-                  onClick={handleEvent}
-                />
+                <input type="button" value="." onClick={handleEvent} />
               </td>
               <td>
                 <input
