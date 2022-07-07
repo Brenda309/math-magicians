@@ -42,9 +42,9 @@
 
 👤 **Brenda Wihogora**
 
-- GitHub: [@githubhandle](https://github.com/Brenda309)
-- Twitter: [@twitterhandle](https://twitter.com/BrendaWihogora)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/BrendaWihogora/)
+- GitHub: [@Brenda309](https://github.com/Brenda309)
+- Twitter: [@BrendaWihogora](https://twitter.com/BrendaWihogora)
+- LinkedIn: [BrendaWihogora](https://linkedin.com/in/BrendaWihogora/)
 
 ## 🤝 Contributing
 
